@@ -30,7 +30,7 @@ public class BattleShipsGame {
 
 As the user is telling you where to place their ships you need to check if that is an appropriate location:
 you can NOT place two or more ships on the same location
-you can’t place ships outside the 10 by 10 grid
+you can’t place ships outside the 10 by 10 grid.
 If the player is trying to put the ship somewhere it can't be, re-prompt them until they choose legal coordinates for the ship.
 You should store the player's ships within the OceanMap as '1'. That way you know within your own code which indexes store the player's ships. However, when you are printing out the map from the method you created in Step 1 you should hide where the ships are by printing an '@' symbol instead. You can accomplish this with an extra if check within the for loop that prints your ocean map. Once the user is finished placing a ship you should print out the map so they can see the current state of their ships.
 
