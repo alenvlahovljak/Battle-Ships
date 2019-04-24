@@ -39,8 +39,7 @@ public class BattleShips {
             System.out.println(" ");
         }   
     }
-    
-    
+   
     public static void computerSea(){
         for(int y=0; y<COMPUTER_MAP.length; y++){
             for(int x=0; x<COMPUTER_MAP[y].length; x++){
@@ -48,7 +47,6 @@ public class BattleShips {
             }       
         }
     }
-    
     
     public static void userInput(){
         String shipNumString;
@@ -93,7 +91,6 @@ public class BattleShips {
         }
     }
     
-    
     public static void computerInput(){
         int counter = 0;
         Random ship = new Random();
@@ -131,8 +128,7 @@ public class BattleShips {
             return PLAYER_MISS;
         }   
     }
-    
-    
+      
     public static int computerTurn(){
         Random missle = new Random();
         int x = missle.nextInt(10);
@@ -158,7 +154,6 @@ public class BattleShips {
         }
     }
     
-    
     public static void map(){
         for(int y=0; y<OCEAN_MAP.length; y++){
             for(int x=0; x<OCEAN_MAP[y].length; x++){                    
@@ -168,7 +163,6 @@ public class BattleShips {
         }
         System.out.println("");
     }
-    
     
     ////////////////////// just for testing
     public static void computerMap(){
