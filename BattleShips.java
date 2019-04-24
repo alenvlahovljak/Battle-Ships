@@ -170,7 +170,7 @@ public class BattleShips {
     }
     
     
-    // just for testing
+    ////////////////////// just for testing
     public static void computerMap(){
         for(int a=0; a<COMPUTER_MAP.length; a++){
             for(int b=0; b<COMPUTER_MAP[a].length; b++){                    
@@ -179,7 +179,7 @@ public class BattleShips {
             System.out.println(" ");
         }
     }
-    
+    ////////////////////////////////////////
     
     public static void main(String[] args) {
        String stringX, stringY;
