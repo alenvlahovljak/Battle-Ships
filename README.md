@@ -7,7 +7,7 @@ This project will help you get more familiar with arrays. You will be recreating
 The ocean map is represented by a 10 by 10 grid of different characters. The grid is managed by a two-dimensional array. You will use this 2D array to save where the user and computer decide to place their ships, as well as when someone tries to attack a location and misses. At the start of the game the array will be empty and as the game is played you will change what is stored at each index of the array accordingly. Once you create your 2D array you need a way to display it to the user so they can choose coordinates. You should display your array surrounded by indexes... To do this you should create a method that prints out the above by looping over the array and adding the indexes and pipe characters before and after each row. You will want to use a nested for loop to print two dimensional image.
 
 
-Step 2 – Deploy player’s ships
+    Step 2 – Deploy player’s ships
 Once you have your ocean map, you'll need to ask the user where they would like to place their ships. The player should deploy 5 ships. A ship will be stored in a single index of the array as a special character. To place the user's ships they need to tell you the coordinates of where the ship should be placed and you need to update the ocean map to reflect their choices. Remember you'll need to use a Scanner to allow the user to enter in input.
 
     import java.util.Scanner; // you must import Scanner to use it
@@ -35,7 +35,7 @@ If the player is trying to put the ship somewhere it can't be, re-prompt them un
 You should store the player's ships within the OceanMap as '1'. That way you know within your own code which indexes store the player's ships. However, when you are printing out the map from the method you created in Step 1 you should hide where the ships are by printing an '@' symbol instead. You can accomplish this with an extra if check within the for loop that prints your ocean map. Once the user is finished placing a ship you should print out the map so they can see the current state of their ships.
 
 
-Step 3 – Deploy computer’s ships
+    Step 3 – Deploy computer’s ships
 The computer will deploy 5 ships by randomly picking X and Y coordinates. Your code is responsible for generating these locations, checking if they are valid, and if so placing the ships accordingly.
 Keep in mind:
 you cannot place the ship on a location that is already taken by another ship (player’s or computer’s)
@@ -45,7 +45,7 @@ You should store the computer's ships within the OceanMap as '2' and they should
 You should generate each line of output each time you successfully place a ship based on random coordinates.
 
 
-Step 4 – Battle
+    Step 4 – Battle
 
 Player's Turn
 Once the player and computer have placed their ships it's time to start the battle! During the battle, the player and computer will take turns guessing X and Y coordinates of the opponent’s ships. Every coordinate guessed should be marked so they players know not to guess there again. When the player enters X and Y coordinates you should check if those coordinates are valid within the Ocean Map and haven't been guessed by the user yet, keep re-prompting until the user enters a valid guess. Once the guess is valid your program needs to evaluate the result of the move.
@@ -75,5 +75,5 @@ You do not need to mark the map with the missed computer guesses, however you wi
 The battle will continue to run until one of the players is out of ships.
 
 
-Step 5 - Game Over
+    Step 5 - Game Over
 When the user and computer are done guessing, display the current state of the ocean map and score. The game is over when one player or computer has no ship left.
