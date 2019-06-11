@@ -211,21 +211,21 @@ public class BattleShips {
                 map();
                 // computer turn
                 point = computerTurn();
-                if(point == 1){
+                if(point==1){
                     computerPoints++;
                     playerShips--;
                 }
-                if(point == -1){
+                if(point==-1){
                     computerPoints--;
                     computerShips--;
                 }
-                if(computerShips == 0){  
+                if(computerShips==0){  
                     map();
                     System.out.println("Your ships: " + playerShips + " | " + "Computer ships: " + computerShips);
                     System.out.println("Horray! You win the battle :)");
                     break;
                 }
-                if(playerShips == 0){
+                if(playerShips==0){
                    map();
                    System.out.println("Your ships: " + playerShips + " | " + "Computer ships: " + computerShips);
                    System.out.println("Sorry! You are a looser!");
